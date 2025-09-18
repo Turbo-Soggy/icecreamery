@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header id="top-bar">
+            <div id="stats">
+                <p>Scoops: <span id="scoops-banked">0</span></p>
+                <p>SpS: <span id="sps">0</span></p>
+                <p>Lifetime Scoops: <span id="lifetime-scoops">0</span></p>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section id="left-panel">
+                <div id="big-ice-cream-container">
+                    <button id="big-ice-cream">🍦</button>
+                </div>
+            </section>
+
+            <section id="right-panel">
+                <div id="shop">
+                    <h2>Shop</h2>
+                    <div id="shop-tabs">
+                        <button class="tab-button active" data-tab="generators">Generators</button>
+                        <button class="tab-button" data-tab="upgrades">Upgrades</button>
+                    </div>
+                    <div id="generators-tab" class="tab-content active">
+                        <h3>Generators</h3>
+                        <ul id="generators-list"></ul>
+                    </div>
+                    <div id="upgrades-tab" class="tab-content">
+                        <h3>Upgrades</h3>
+                        <ul id="upgrades-list"></ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="golden-sundae-container"></div>
+
+        <footer id="bottom-bar">
+            <button id="save-button">Save</button>
+            <button id="reset-button">Reset Progress</button>
+            <!-- Settings might include volume toggle later -->
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
